@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>01jQuery</title>
+    <style>
+        *{font-size: 14pt;}
+        a{text-decoration: none;}
+      </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        // $(document).ready(function(){code기술 btn(), datepicker(), slideToggle()});
+        $(document).ready(function(){
+            $('#btn1').click(function(){
+                $('#btn1').css("background", "pink");
+                $('#btn1').css("border 1px", "solid navy");
+                $('#btn1').css("height", "70px");
+                $('#btn1').css("width", "100px");
+                $('#display').text("button1을 눌렀습니다.");
+            });//end
+            $('#btn2_myspring').on('click',function(){
+                $(this).css("background", "orange");
+                $(this).css("border 1px", "solid navy");
+                $(this).css("height", "70px");
+                $(this).css("width", "100px");
+                $('#display').text("button2을 눌렀습니다.");
+
+            });//end
+            $('#btn3').click(function(){
+                //css 배경색 #abcdef, border 1px solid navy
+
+            });//end
+        });//제이쿼리 end
+    </script>
+</head>
+
+<body>
+
+    <h2>01jQuery.html</h2>
+    <input type="button" id="btn1" value="버튼1">
+    <input type="button" id="btn2_myspring" value="버튼2">
+    <input type="button" id="btn3" value="버튼3"><p></p>
+
+    <div id="display"></div>
+
+</body>
+</html>
